@@ -1,0 +1,13 @@
+# Railway.app deployment configuration
+[[services]]
+  name = "music-bot"
+  port = 5000
+  env = {}
+  
+  [[services.aliases]]
+    name = "bot"
+    port = 5000
+
+  [services.build]
+    context = "."
+    dockerfile = "Dockerfile"
